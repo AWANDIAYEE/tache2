@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.contact-form {
+  background-color: #faf7f4;
+  display: flex;
+  align-items: center;
+  padding: 300px;
+  margin: 10px;
+  height: 100vh;
+  border: #0f0f0f;
+}
+.title {
+  text-align: center;
+}
+.contact-form img {
+  width: 300px;
+  height: 450px;
+  margin-right: 10px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0px;
+}
+.contact-form label {
+  color: #0e0d0d;
+  margin-bottom: 10px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: #050505;
+  border-bottom: 2px solid #131212;
+}
+.contact-form input[type="submit"] {
+  background-color: #141413;
+  color: #f7ecec;
+  padding: 15px 0;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: all .3 ease;
+}
+ .contact-form H2{
+  padding: 15px 0;
+ border-radius: 3px;
+  font-size: 18px;
+  font-weight: 200px;
+  color: #070707;
+  margin-top: 30px; 
+}
+/* max-width, si l'ecran est inf ou egal alors {...} */
+/* max-width = desktop-first*/
+@media screen and (max-width: 425px) {
+  .contact-form{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+  }
+  .title{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+   .containers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
